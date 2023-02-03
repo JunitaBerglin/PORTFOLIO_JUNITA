@@ -1,0 +1,229 @@
+@use "mixins" as mix;
+@use "variables" as var;
+
+.wrapperOfJunita {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__bigName {
+    margin-top: 190px;
+  }
+  @include mix.desktop {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__bigName {
+      margin-top: 118px;
+    }
+  }
+}
+.wrapperOfBerglin {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__bigName {
+    margin-bottom: 125px;
+  }
+  @include mix.desktop {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__bigName {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.wrapperOfMovementContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  @include mix.desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.middleMovement {
+  border: solid black;
+  border-radius: 50px;
+  background-color: black;
+  width: 70%;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    margin-top: 4%;
+    color: var.$color-primary;
+    display: flex;
+    justify-content: space-between;
+  }
+  @include mix.desktop {
+    border: solid black;
+    border-radius: 50px;
+    background-color: black;
+    width: 70%;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      margin-top: 2%;
+      color: var.$color-primary;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.move {
+  animation: left 10s infinite linear;
+}
+.move:first-child {
+  animation-delay: 5s;
+}
+
+@keyframes left {
+  0% {
+    transform: translate(-800px, 0);
+  }
+
+  100% {
+    transform: translate(800px, 0);
+  }
+}
+
+.footer__container {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+
+  &__logo {
+    height: 5px;
+    width: 5px;
+  }
+
+  &__arrow {
+    height: 90px;
+    width: 90px;
+  }
+
+  &__social {
+    height: 8vh;
+    width: 8vw;
+  }
+
+  &__copywrite {
+    font-size: 5px;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    padding-top: 20px;
+    &:hover {
+      background-color: #ffffdf;
+      transition: 2000ms;
+    }
+
+    &--text {
+      color: black;
+      text-decoration: none;
+      font-family: var.$font-family-primary;
+      font-size: 80px;
+    }
+  }
+
+  &__portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    padding-top: 20px;
+    &:hover {
+      background-color: #ffffdf;
+      transition: 2000ms;
+    }
+
+    &--text {
+      color: black;
+      text-decoration: none;
+      font-family: var.$font-family-primary;
+      font-size: 80px;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    padding-top: 20px;
+    &:hover {
+      background-color: #ffffdf;
+      transition: 2000ms;
+    }
+
+    &--text {
+      color: black;
+      text-decoration: none;
+      font-family: var.$font-family-primary;
+      font-size: 80px;
+    }
+  }
+}
+/*
+      <nav class="navigation">
+        <div class="navigation__about">
+          <div>
+            <a class="navigation__about--text" href="#">ABOUT</a>
+          </div>
+        </div>
+
+        <div class="navigation__portfolio">
+          <div>
+            <a class="navigation__portfolio--text" href="#"
+              >PORTFOLIO</a
+            >
+          </div>
+        </div>
+
+        <div class="navigation__contact">
+          <div>
+            <a class="navigation__contact--text" href="#">CONTACT</a>
+          </div>
+        </div>
+      </nav>
+      */
