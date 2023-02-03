@@ -1,4 +1,4 @@
-export { PortfolioItem };
+export { PortfolioItem, portfolioItems };
 
 class PortfolioItem {
   constructor(
@@ -29,3 +29,5 @@ let PortfolioItem3 = new PortfolioItem(
   "Skolarbete 2022",
   3
 );
+
+let portfolioItems = [PortfolioItem1, PortfolioItem2, PortfolioItem3];
