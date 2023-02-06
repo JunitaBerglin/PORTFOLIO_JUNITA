@@ -23,7 +23,7 @@ function createHTML(portfolioItems: PortfolioItem[]) {
     document.body.appendChild(portfolioContainer);
   }
 }
-// Remove
+
 // createHTML(portfolioItems);
 
 let portfolioClick = document.getElementById(
