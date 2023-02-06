@@ -1,10 +1,6 @@
-import {
-  PortfolioItem,
-  portfolioItems,
-} from "./modules/PortfolioItems";
+import { PortfolioItem, portfolioItems } from "./modules/PortfolioItems";
 
-const portfolioDisplay: HTMLElement =
-  document.createElement("section");
+const portfolioDisplay: HTMLElement = document.createElement("section");
 
 portfolioDisplay.classList.add("portfolioDisplay");
 
@@ -12,10 +8,8 @@ function createHTML(portfolioItems: PortfolioItem[]) {
   portfolioDisplay.innerHTML = "";
 
   for (let i = 0; i < portfolioItems.length; i++) {
-    let portfolioContainer: HTMLDivElement =
-      document.createElement("div");
-    let portfolioImage: HTMLImageElement =
-      document.createElement("img");
+    let portfolioContainer: HTMLDivElement = document.createElement("div");
+    let portfolioImage: HTMLImageElement = document.createElement("img");
 
     portfolioContainer.classList.add("portfolio");
     portfolioImage.classList.add("portfolio__image");
@@ -29,6 +23,7 @@ function createHTML(portfolioItems: PortfolioItem[]) {
     document.body.appendChild(portfolioContainer);
   }
 }
+// Remove
 // createHTML(portfolioItems);
 
 let portfolioClick = document.getElementById(
