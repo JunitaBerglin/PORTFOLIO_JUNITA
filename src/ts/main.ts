@@ -1,6 +1,10 @@
-import { PortfolioItem, portfolioItems } from "./modules/PortfolioItems";
+import {
+  PortfolioItem,
+  portfolioItems,
+} from "./modules/PortfolioItems";
 
-const portfolioDisplay: HTMLElement = document.createElement("section");
+const portfolioDisplay: HTMLElement =
+  document.createElement("section");
 
 portfolioDisplay.classList.add("portfolioDisplay");
 
@@ -8,8 +12,10 @@ function createHTML(portfolioItems: PortfolioItem[]) {
   portfolioDisplay.innerHTML = "";
 
   for (let i = 0; i < portfolioItems.length; i++) {
-    let portfolioContainer: HTMLDivElement = document.createElement("div");
-    let portfolioImage: HTMLImageElement = document.createElement("img");
+    let portfolioContainer: HTMLDivElement =
+      document.createElement("div");
+    let portfolioImage: HTMLImageElement =
+      document.createElement("img");
 
     portfolioContainer.classList.add("portfolio");
     portfolioImage.classList.add("portfolio__image");
@@ -20,13 +26,15 @@ function createHTML(portfolioItems: PortfolioItem[]) {
     portfolioContainer.appendChild(portfolioImage);
     portfolioDisplay.appendChild(portfolioContainer);
 
-    (document.querySelector("main") as HTMLElement).appendChild(
-      portfolioDisplay
-    );
-
-    portfolioImage.addEventListener("click", () => {
-      //Jag vet inte vad du vill göra här?
-    });
+    document.body.appendChild(portfolioContainer);
   }
 }
 createHTML(portfolioItems);
+
+let portfolioClick = document.getElementById(
+  "portfolioClick"
+) as HTMLDivElement;
+
+portfolioClick.addEventListener("click", () => {
+  createHTML(portfolioItems);
+});
