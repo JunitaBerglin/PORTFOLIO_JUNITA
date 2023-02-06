@@ -24,7 +24,7 @@ function createHTML(portfolioItems: PortfolioItem[]) {
     portfolioImage.alt = portfolioItems[i].name;
 
     portfolioContainer.appendChild(portfolioImage);
-    portfolioContainer.appendChild(portfolioDisplay);
+    portfolioDisplay.appendChild(portfolioContainer);
 
     document.body.appendChild(portfolioContainer);
   }
