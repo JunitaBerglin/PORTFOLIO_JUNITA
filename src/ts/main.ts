@@ -1,35 +1,39 @@
-import { PortfolioItem, portfolioItems } from "./modules/PortfolioItems";
+// import { contact } from "./modules/pages/contact";
+// import { startpage } from "./modules/pages/startpage";
 
-const portfolioDisplay: HTMLElement = document.createElement("section");
+import { projects } from "./modules/projectList";
+import { Projects } from "./modules/Projects";
 
-portfolioDisplay.classList.add("portfolioDisplay");
+const projectOnDisplay: HTMLElement =
+  document.createElement("section");
 
-function createHTML(portfolioItems: PortfolioItem[]) {
-  portfolioDisplay.innerHTML = "";
+projectOnDisplay.classList.add("projectOnDisplay");
 
-  for (let i = 0; i < portfolioItems.length; i++) {
-    let portfolioContainer: HTMLDivElement = document.createElement("div");
-    let portfolioImage: HTMLImageElement = document.createElement("img");
+function work(projectItems: Projects[]) {
+  projectOnDisplay.innerHTML = "";
 
-    portfolioContainer.classList.add("portfolio");
-    portfolioImage.classList.add("portfolio__image");
+  for (let i = 0; i < projectItems.length; i++) {
+    let projectContainer: HTMLDivElement =
+      document.createElement("div");
+    let projectImage: HTMLImageElement =
+      document.createElement("img");
 
-    portfolioImage.src = portfolioItems[i].image;
-    portfolioImage.alt = portfolioItems[i].name;
+    projectContainer.classList.add("project");
+    projectImage.classList.add("project__image");
 
-    portfolioContainer.appendChild(portfolioImage);
-    portfolioDisplay.appendChild(portfolioContainer);
+    projectImage.src = projectItems[i].image;
+    projectImage.alt = projectItems[i].name;
 
-    document.body.appendChild(portfolioContainer);
+    projectContainer.appendChild(projectImage);
+    projectOnDisplay.appendChild(projectContainer);
+
+    document.body.appendChild(projectContainer);
   }
 }
-// Remove
-// createHTML(portfolioItems);
-
-let portfolioClick = document.getElementById(
-  "portfolioClick"
+let projectClick = document.getElementById(
+  "projectClick"
 ) as HTMLDivElement;
 
-portfolioClick.addEventListener("click", () => {
-  createHTML(portfolioItems);
+projectClick.addEventListener("click", () => {
+  work(projects);
 });

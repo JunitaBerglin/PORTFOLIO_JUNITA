@@ -11,6 +11,7 @@ body {
   background-color: var.$color-primary;
   font-family: var.$font-family-primary;
   display: flex;
+  flex-wrap: wrap;
 }
 
 h1 {

@@ -164,7 +164,7 @@
     }
   }
 
-  &__portfolio {
+  &__project {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,26 +204,26 @@
     }
   }
 }
-/*
-      <nav class="navigation">
-        <div class="navigation__about">
-          <div>
-            <a class="navigation__about--text" href="#">ABOUT</a>
-          </div>
-        </div>
 
-        <div class="navigation__portfolio">
-          <div>
-            <a class="navigation__portfolio--text" href="#"
-              >PORTFOLIO</a
-            >
-          </div>
-        </div>
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-        <div class="navigation__contact">
-          <div>
-            <a class="navigation__contact--text" href="#">CONTACT</a>
-          </div>
-        </div>
-      </nav>
-      */
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      transition: 2000ms;
+    }
+    @include mix.desktop {
+      height: 30vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
