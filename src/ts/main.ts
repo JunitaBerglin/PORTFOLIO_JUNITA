@@ -4,12 +4,15 @@
 import { projects } from "./modules/projectList";
 import { Projects } from "./modules/Projects";
 
-const projectOnDisplay: HTMLElement =
-  document.createElement("section");
+const projectOnDisplay: HTMLElement = document.createElement("section");
 
 projectOnDisplay.classList.add("projectOnDisplay");
 
+let projectsOpen = false;
+
 function work(projectItems: Projects[]) {
+  projectsOpen = true;
+  document.getElementById("portfolioIcon")?.classList.add("open");
   projectOnDisplay.innerHTML = "";
 
   for (let i = 0; i < projectItems.length; i++) {
@@ -19,15 +22,11 @@ function work(projectItems: Projects[]) {
     /* let projectMain: HTMLDivElement = document.getElementById(
       "mainWrapper"
     ) as HTMLDivElement; */
-    let projectImage: HTMLImageElement =
-      document.createElement("img");
-    let projectName: HTMLHeadingElement =
-      document.createElement("h3");
-    let projectDescription: HTMLParagraphElement =
-      document.createElement("p");
+    let projectImage: HTMLImageElement = document.createElement("img");
+    let projectName: HTMLHeadingElement = document.createElement("h3");
+    let projectDescription: HTMLParagraphElement = document.createElement("p");
     // let link = document.createElement("a");
-    let projectButton: HTMLButtonElement =
-      document.createElement("button");
+    let projectButton: HTMLButtonElement = document.createElement("button");
 
     projectContainer.classList.add("project");
     projectImage.classList.add("project__image");
@@ -54,10 +53,17 @@ function work(projectItems: Projects[]) {
     projectContainer.appendChild(projectButton);
   }
 }
-let projectClick = document.getElementById(
-  "projectClick"
-) as HTMLDivElement;
+let projectClick = document.getElementById("projectClick") as HTMLDivElement;
 
 projectClick.addEventListener("click", () => {
-  work(projects);
+  if (!projectsOpen) {
+    work(projects);
+  } else {
+    let projectContainer: HTMLDivElement = document.getElementById(
+      "workWrapper"
+    ) as HTMLDivElement;
+    projectContainer.innerHTML = "";
+    projectsOpen = false;
+    document.getElementById("portfolioIcon")?.classList.remove("open");
+  }
 });

@@ -145,6 +145,15 @@
   align-items: center;
   flex-wrap: wrap;
 
+  i {
+    font-size: 70px;
+    margin: 0 0 0 10px;
+
+    &.open:before {
+      transform: rotate(180deg);
+    }
+  }
+
   &__about {
     display: flex;
     justify-content: center;
