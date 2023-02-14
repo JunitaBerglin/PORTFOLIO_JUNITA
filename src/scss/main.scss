@@ -1,6 +1,7 @@
 @use "mixins" as mix;
 @use "variables" as var;
 @use "startpage";
+@use "work";
 
 html {
   scroll-behavior: smooth;
@@ -11,7 +12,7 @@ body {
   background-color: var.$color-primary;
   font-family: var.$font-family-primary;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 h1 {
@@ -29,7 +30,7 @@ h3 {
 
 p {
   font-size: 17px;
-  color: var.$color-primary;
+  // color: var.$color-primary;
   // animation: infinite;
   //animation-duration: 5s;
 }

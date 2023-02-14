@@ -98,6 +98,7 @@
 
 .move {
   animation: left 10s infinite linear;
+  color: var.$color-primary;
 }
 .move:first-child {
   animation-delay: 5s;
@@ -201,29 +202,6 @@
       text-decoration: none;
       font-family: var.$font-family-primary;
       font-size: 80px;
-    }
-  }
-}
-
-.project {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &__image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &:hover {
-      transition: 2000ms;
-    }
-    @include mix.desktop {
-      height: 30vh;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
   }
 }

@@ -1,0 +1,70 @@
+@use "mixins" as mix;
+@use "variables" as var;
+
+.workWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fae4c1;
+  margin: 5px;
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      transition: 2000ms;
+    }
+    @include mix.desktop {
+      height: 45%;
+      width: 55%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__name {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    @include mix.desktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__description {
+    color: black;
+    padding: 10px;
+
+    @include mix.desktop {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__button {
+    padding: 7px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mix.desktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
