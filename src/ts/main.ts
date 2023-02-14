@@ -16,6 +16,9 @@ function work(projectItems: Projects[]) {
     let projectContainer: HTMLDivElement = document.getElementById(
       "workWrapper"
     ) as HTMLDivElement;
+    /* let projectMain: HTMLDivElement = document.getElementById(
+      "mainWrapper"
+    ) as HTMLDivElement; */
     let projectImage: HTMLImageElement =
       document.createElement("img");
     let projectName: HTMLHeadingElement =
@@ -49,9 +52,6 @@ function work(projectItems: Projects[]) {
     projectContainer.appendChild(projectImage);
     projectContainer.appendChild(projectDescription);
     projectContainer.appendChild(projectButton);
-    projectOnDisplay.appendChild(projectContainer);
-
-    document.body.appendChild(projectContainer);
   }
 }
 let projectClick = document.getElementById(

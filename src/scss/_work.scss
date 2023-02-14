@@ -11,6 +11,8 @@
 
 .project {
   display: flex;
+  flex-direction: column;
+  width: 20vw;
   justify-content: center;
   align-items: center;
   background-color: #fae4c1;
