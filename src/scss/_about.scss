@@ -1,0 +1,17 @@
+@use "mixins" as mix;
+@use "variables" as var;
+
+.aboutWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__description {
+  width: 30%;
+  color: #ffffff;
+  background-color: black;
+  padding: 30px;
+  border-radius: 60px;
+  font-family: var.$font-family-secondary;
+}

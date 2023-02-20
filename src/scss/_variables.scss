@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "thin";
+  src: url(../attributes/webly-sleek/weblysleekuil.ttf);
+}
+
 //färger
 $color-primary: #f9d080;
 $color-secondary-light: white;
@@ -5,4 +10,5 @@ $color-secondary-dark: black;
 
 //font
 
-$font-family-primary: "Josefin Sans", sans-serif;
+$font-family-primary: "thin";
+$font-family-secondary: "thin";
