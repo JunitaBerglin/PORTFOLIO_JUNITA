@@ -2,14 +2,14 @@
 @use "variables" as var;
 
 .wrapperOfJunita {
-  height: 30vh;
+  height: 20vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 
   &__bigName {
-    margin-top: 190px;
+    margin-top: 100px;
   }
   @include mix.desktop {
     height: 40vh;
@@ -24,14 +24,14 @@
   }
 }
 .wrapperOfBerglin {
-  height: 30vh;
+  height: 20vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 
   &__bigName {
-    margin-bottom: 170px;
+    margin-bottom: 90px;
   }
   @include mix.desktop {
     height: 40vh;
@@ -41,7 +41,7 @@
     align-items: center;
 
     &__bigName {
-      margin-bottom: 35px;
+      margin-bottom: 124px;
     }
   }
 }
@@ -114,23 +114,37 @@
   }
 }
 
-.footer__container {
-  height: 10vh;
+.footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 30px;
 
   &__logo {
     height: 5px;
     width: 5px;
+    margin-left: 5px;
+    @include mix.desktop {
+      margin-left: 60px;
+    }
   }
 
   &__social {
-    height: 8vh;
-    width: 8vw;
+    @include mix.link;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    color: black;
+    @include mix.desktop {
+      margin-right: 150px;
+    }
   }
 
   &__copywrite {
-    font-size: 5px;
+    font-size: 10px;
+    margin-left: 250px;
+    @include mix.desktop {
+      margin-left: 45%;
+    }
   }
 }
 

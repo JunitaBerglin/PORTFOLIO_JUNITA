@@ -17,7 +17,7 @@ export let projects: Projects[] = [
     "https://github.com/JunitaBerglin/sheckout-group-project"
   ),
   new Projects(
-    "todo",
+    "Todo",
     "https://github.com/JunitaBerglin/javascript-grundkurs/blob/main/src/assets/todoProject.png?raw=true",
     "This project was an assignment in the course 'Introduction to JavaScript'. Creating a To-do list that allows the user to add new tasks to their lists",
     2,

@@ -5,14 +5,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include mix.desktop {
+    // margin-left: 15%;
+  }
 }
 
-.about__description {
-  width: 80%;
-  color: #ffffff;
-  background-color: black;
-  padding: 30px;
-  border-radius: 60px;
-  font-family: var.$font-family-secondary;
-  margin-top: 10px;
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__description {
+    width: 80%;
+    color: #ffffff;
+    background-color: black;
+    padding: 30px;
+    border-radius: 60px;
+    font-family: var.$font-family-secondary;
+    margin-top: 10px;
+    @include mix.desktop {
+      width: 45%;
+    }
+
+    &__img {
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      border: dotted 2px rgba(76, 32, 22, 255);
+    }
+  }
 }

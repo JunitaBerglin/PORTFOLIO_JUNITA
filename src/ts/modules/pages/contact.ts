@@ -75,7 +75,7 @@ export function contact() {
 
   contactForm.method = "POST";
   contactForm.action =
-    "https://formsubmit.co/66bbe4914c83b8fb51f38a400fca1567";
+    "https://formsubmit.co/junita.berglin@gmail.com";
   formReply.type = "hidden";
   formReply.name = "_next";
   formReply.value = "https://junitaberglin.com/";

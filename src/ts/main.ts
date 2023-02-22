@@ -47,7 +47,7 @@ export function work(projectItems: Projects[]) {
     websiteLink.href = projectItems[i].link;
     githubLink.href = projectItems[i].githublink;
 
-    websiteLink.innerHTML = '<i class="bi bi-box-arrow-right"></i>';
+    websiteLink.innerHTML = " testa sidan! ";
     githubLink.innerHTML = "<i class='bi bi-github'></i>";
 
     container.appendChild(projectName);
@@ -105,10 +105,15 @@ function about() {
   aboutDescription.classList.add("about__description");
   aboutContainer.classList.add("aboutWrapper");
 
+  aboutImage.src =
+    "https://github.com/JunitaBerglin/PORTFOLIO_JUNITA/blob/main/src/attributes/IMG_8339.heic?raw=true";
+  aboutImage.alt = "pucture of me!";
+
   aboutDescription.innerHTML =
     "Hello, I’m Junita! I am a junior front end developer, currently studying at Medieinstitutet in Stockholm. As a former occupational therapist I always have a creative perspective in mind and I love what innovation can do for people. Next up for me is internship this autumn. I hope to find a place where I can contribute aswell as learn a develop my front end skills.";
 
   aboutContainer.appendChild(aboutDescription);
+  aboutContainer.appendChild(aboutImage);
 }
 
 let aboutClick = document.getElementById(

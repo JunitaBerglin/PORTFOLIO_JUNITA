@@ -2,7 +2,7 @@
 @use "variables" as var;
 
 .contact {
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -61,7 +61,7 @@
     text-align: start;
     padding: 5px;
     @include mix.desktop {
-      cursor: none;
+      cursor: pointer;
     }
   }
 
@@ -100,7 +100,7 @@
       border: 1px solid #000;
       color: #000;
       @include mix.desktop {
-        cursor: none;
+        cursor: pointer;
       }
     }
   }
