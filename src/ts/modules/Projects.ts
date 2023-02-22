@@ -3,7 +3,9 @@ export class Projects {
     public name: string,
     public image: string,
     public describtion: string,
-    public id: number
+    public id: number,
+    public link: string,
+    public githublink: string
   ) {}
 }
 

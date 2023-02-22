@@ -1,14 +1,7 @@
-let contactClick = document.getElementById(
-  "portfolioClick"
-) as HTMLDivElement;
-
-contactClick.addEventListener("click", () => {
-  contact();
-});
-
-function contact() {
-  const contactPageContainer: HTMLDivElement =
-    document.createElement("div");
+export function contact() {
+  const contactWrapper = document.getElementById(
+    "contactWrapper"
+  ) as HTMLDivElement;
   const contactPageTitle: HTMLParagraphElement =
     document.createElement("p");
   const contactPageText: HTMLParagraphElement =
@@ -56,8 +49,8 @@ function contact() {
   const contactFormSubmitButton: HTMLButtonElement =
     document.createElement("button");
 
-  contactPageContainer.setAttribute("id", "contact");
-  contactPageContainer.classList.add("contact");
+  contactWrapper.setAttribute("id", "contact");
+  contactWrapper.classList.add("contact");
   contactPageTitle.classList.add("contact__title");
   contactPageText.classList.add("contact__text");
   contactForm.classList.add("form");
@@ -118,8 +111,7 @@ function contact() {
   contactFormMailInput.required = true;
   contactFormMessageInput.required = true;
 
-  contactPageTitle.innerHTML = "#contact";
-  contactPageText.innerHTML = "Get in touch with me!";
+  contactPageText.innerHTML = "Get in touch!";
   contactFormFirstNameLabel.innerHTML = "First Name";
   contactFormLastNameLabel.innerHTML = "Last Name";
   contactFormMailLabel.innerHTML = "Mail";
@@ -152,8 +144,8 @@ function contact() {
   contactFormPhoneContainer.appendChild(contactFormPhoneInput);
   contactFormMessageContainer.appendChild(contactFormMessageLabel);
   contactFormMessageContainer.appendChild(contactFormMessageInput);
-  contactPageContainer.appendChild(contactPageTitle);
-  contactPageContainer.appendChild(contactPageText);
-  contactPageContainer.appendChild(contactForm);
-  document.body.appendChild(contactPageContainer);
+  contactWrapper.appendChild(contactPageTitle);
+  contactWrapper.appendChild(contactPageText);
+  contactWrapper.appendChild(contactForm);
+  //  document.body.appendChild(contactWrapper);
 }

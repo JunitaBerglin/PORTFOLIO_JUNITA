@@ -1,5 +1,6 @@
 import { projects } from "./modules/projectList";
 import { Projects } from "./modules/Projects";
+import { contact } from "./modules/pages/contact";
 
 let mainWrapper = document.getElementById(
   "mainWrapper"
@@ -17,41 +18,45 @@ export function work(projectItems: Projects[]) {
   document.getElementById("portfolioIcon")?.classList.add("open");
   projectOnDisplay.innerHTML = "";
 
+  let projectContainer: HTMLDivElement = document.getElementById(
+    "workWrapper"
+  ) as HTMLDivElement;
+
   for (let i = 0; i < projectItems.length; i++) {
-    let projectContainer: HTMLDivElement = document.getElementById(
-      "workWrapper"
-    ) as HTMLDivElement;
+    let container: HTMLDivElement = document.createElement("div");
     let projectImage: HTMLImageElement =
       document.createElement("img");
     let projectName: HTMLHeadingElement =
       document.createElement("h3");
     let projectDescription: HTMLParagraphElement =
       document.createElement("p");
-    // let link = document.createElement("a");
-    let projectButton: HTMLButtonElement =
-      document.createElement("button");
+    let websiteLink: HTMLAnchorElement = document.createElement("a");
+    let githubLink: HTMLAnchorElement = document.createElement("a");
 
-    projectContainer.classList.add("project");
+    container.classList.add("project");
     projectImage.classList.add("project__image");
     projectName.classList.add("project__name");
     projectDescription.classList.add("project__description");
-    projectButton.classList.add("project__button");
+    websiteLink.className = "project__websidelink";
+    githubLink.className = "project__link";
 
     projectImage.src = projectItems[i].image;
     projectImage.alt = projectItems[i].name;
     projectName.innerHTML = projectItems[i].name;
     projectDescription.innerHTML = projectItems[i].describtion;
-    projectButton.innerHTML = "Github!";
+    websiteLink.href = projectItems[i].link;
+    githubLink.href = projectItems[i].githublink;
 
-    projectImage.addEventListener("click", () => {
-      document.location.href =
-        "https://github.com/JunitaBerglin?tab=repositories";
-    });
+    websiteLink.innerHTML = '<i class="bi bi-box-arrow-right"></i>';
+    githubLink.innerHTML = "<i class='bi bi-github'></i>";
 
-    projectContainer.appendChild(projectName);
-    projectContainer.appendChild(projectImage);
-    projectContainer.appendChild(projectDescription);
-    projectContainer.appendChild(projectButton);
+    container.appendChild(projectName);
+    container.appendChild(projectImage);
+    container.appendChild(projectDescription);
+    container.appendChild(websiteLink);
+    container.appendChild(githubLink);
+
+    projectContainer.appendChild(container);
   }
 }
 let projectClick = document.getElementById(
@@ -121,4 +126,14 @@ aboutClick.addEventListener("click", () => {
     aboutOpen = false;
     document.getElementById("aboutIcon")?.classList.remove("open");
   }
+});
+
+/*************************CONTACT ************************* */
+
+let contactClick = document.getElementById(
+  "contactClick"
+) as HTMLDivElement;
+
+contactClick.addEventListener("click", () => {
+  contact();
 });
