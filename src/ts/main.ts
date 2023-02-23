@@ -92,6 +92,9 @@ function about() {
   let aboutContainer: HTMLDivElement = document.getElementById(
     "aboutWrapper"
   ) as HTMLDivElement;
+  let imgContainer: HTMLDivElement = document.createElement(
+    "div"
+  ) as HTMLDivElement;
 
   aboutOpen = true;
   document.getElementById("aboutIcon")?.classList.add("open");
@@ -104,16 +107,19 @@ function about() {
   aboutImage.classList.add("about__img");
   aboutDescription.classList.add("about__description");
   aboutContainer.classList.add("aboutWrapper");
+  imgContainer.classList.add("imgWrapper");
 
   aboutImage.src =
-    "https://github.com/JunitaBerglin/PORTFOLIO_JUNITA/blob/main/src/attributes/IMG_8339.heic?raw=true";
+    "https://github.com/JunitaBerglin/PORTFOLIO_JUNITA/blob/main/src/attributes/IMG_8339%20(1).jpg?raw=true";
   aboutImage.alt = "pucture of me!";
+  aboutImage.setAttribute("id", "img_me");
 
   aboutDescription.innerHTML =
     "Hello, I’m Junita! I am a junior front end developer, currently studying at Medieinstitutet in Stockholm. As a former occupational therapist I always have a creative perspective in mind and I love what innovation can do for people. Next up for me is internship this autumn. I hope to find a place where I can contribute aswell as learn a develop my front end skills.";
 
   aboutContainer.appendChild(aboutDescription);
-  aboutContainer.appendChild(aboutImage);
+  imgContainer.appendChild(aboutImage);
+  aboutDescription.appendChild(imgContainer);
 }
 
 let aboutClick = document.getElementById(

@@ -5,6 +5,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @include mix.desktop {
+    // margin-left: 15%;
+  }
+}
+
+.imgWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
   @include mix.desktop {
     // margin-left: 15%;
   }
@@ -26,12 +40,16 @@
     @include mix.desktop {
       width: 45%;
     }
+  }
+}
 
-    &__img {
-      height: 250px;
-      width: 250px;
-      border-radius: 50%;
-      border: dotted 2px rgba(76, 32, 22, 255);
-    }
+#img_me {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: solid 1px #ffffff;
+  @include mix.desktop {
+    height: 200px;
+    width: 200px;
   }
 }
