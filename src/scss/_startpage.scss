@@ -3,7 +3,6 @@
 
 .wrapperOfJunita {
   height: 20vh;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +12,6 @@
   }
   @include mix.desktop {
     height: 40vh;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +23,6 @@
 }
 .wrapperOfBerglin {
   height: 20vh;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +32,6 @@
   }
   @include mix.desktop {
     height: 40vh;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,13 +46,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 
   @include mix.desktop {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
   }
 }
 
@@ -64,34 +58,25 @@
   border: solid black;
   border-radius: 50px;
   background-color: black;
-  width: 90%;
+  width: 95%;
   height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include mix.desktop {
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 80%;
+  }
 
   &__text {
-    margin-top: 4%;
+    margin-top: 2px;
     color: var.$color-primary;
     display: flex;
     justify-content: space-between;
-  }
-  @include mix.desktop {
-    border: solid black;
-    border-radius: 50px;
-    background-color: black;
-    width: 70%;
-    height: 47px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &__text {
-      margin-top: 2%;
-      color: var.$color-primary;
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: nowrap;
+    @include mix.desktop {
+      margin-top: 4px;
+      margin-bottom: 10px;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
@@ -141,7 +126,7 @@
 
   &__copywrite {
     font-size: 10px;
-    margin-left: 250px;
+    margin-left: 200px;
     @include mix.desktop {
       margin-left: 45%;
     }
@@ -157,7 +142,6 @@
   &__arrowIcon {
     font-size: 30px;
     margin: 0 0 0 10px;
-    padding-bottom: 30px;
 
     &.open:before {
       transform: rotate(180deg);
@@ -179,7 +163,10 @@
       color: black;
       text-decoration: none;
       font-family: var.$font-family-primary;
-      font-size: 60px;
+      font-size: 50px;
+      @include mix.desktop {
+        font-size: 80px;
+      }
     }
   }
 
@@ -198,7 +185,10 @@
       color: black;
       text-decoration: none;
       font-family: var.$font-family-primary;
-      font-size: 60px;
+      font-size: 50px;
+      @include mix.desktop {
+        font-size: 80px;
+      }
     }
   }
 
@@ -217,7 +207,10 @@
       color: black;
       text-decoration: none;
       font-family: var.$font-family-primary;
-      font-size: 60px;
+      font-size: 50px;
+      @include mix.desktop {
+        font-size: 80px;
+      }
     }
   }
 }

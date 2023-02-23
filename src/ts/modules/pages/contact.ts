@@ -1,4 +1,13 @@
 export function contact() {
+  const contactDiv = document.getElementById("contact");
+  if (contactDiv) {
+    contactDiv.innerHTML = "";
+    contactDiv.setAttribute("id", "contactWrapper");
+    contactDiv.classList.remove("contact");
+
+    return;
+  }
+
   const contactWrapper = document.getElementById(
     "contactWrapper"
   ) as HTMLDivElement;
@@ -75,7 +84,7 @@ export function contact() {
 
   contactForm.method = "POST";
   contactForm.action =
-    "https://formsubmit.co/junita.berglin@gmail.com";
+    "https://formsubmit.co/68a04b80f29cd1ae7d696341179067a2";
   formReply.type = "hidden";
   formReply.name = "_next";
   formReply.value = "https://junitaberglin.com/";

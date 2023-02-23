@@ -25,16 +25,12 @@ h1 {
     font-size: 200px;
   }
 }
-h3 {
-  font-size: 40px;
-  color: #000000;
-}
 
 p {
-  font-size: 17px;
-  // color: var.$color-primary;
-  // animation: infinite;
-  //animation-duration: 5s;
+  font-size: 12px;
+  @include mix.desktop {
+    font-size: 17px;
+  }
 }
 
 a:hover {
