@@ -57,6 +57,8 @@ export function contact() {
     document.createElement("textarea");
   const contactFormSubmitButton: HTMLButtonElement =
     document.createElement("button");
+  const contactPageEmail: HTMLParagraphElement =
+    document.createElement("p");
 
   contactWrapper.setAttribute("id", "contact");
   contactWrapper.classList.add("contact");
@@ -81,6 +83,7 @@ export function contact() {
   contactFormPhoneInput.classList.add("form__input");
   contactFormMessageInput.classList.add("form__input--message");
   contactFormSubmitButton.classList.add("form__button");
+  contactPageText.classList.add("contact__email");
 
   contactForm.method = "POST";
   contactForm.action =
@@ -127,6 +130,8 @@ export function contact() {
   contactFormPhoneLabel.innerHTML = "Phone";
   contactFormMessageLabel.innerHTML = "Your Message";
   contactFormSubmitButton.innerHTML = "Submit";
+  contactPageEmail.innerHTML =
+    "Otherwise, email me at junita.berglin@gmail.com!";
 
   contactForm.appendChild(contactFormNameContainer);
   contactForm.appendChild(contactFormContactContainer);
@@ -156,5 +161,6 @@ export function contact() {
   contactWrapper.appendChild(contactPageTitle);
   contactWrapper.appendChild(contactPageText);
   contactWrapper.appendChild(contactForm);
+  contactWrapper.appendChild(contactPageEmail);
   //  document.body.appendChild(contactWrapper);
 }

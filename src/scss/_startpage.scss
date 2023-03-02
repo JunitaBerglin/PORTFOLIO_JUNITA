@@ -102,34 +102,15 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
-
-  &__logo {
-    height: 5px;
-    width: 5px;
-    margin-left: 5px;
-    @include mix.desktop {
-      margin-left: 60px;
-    }
-  }
-
-  &__social {
-    @include mix.link;
-    height: 50px;
-    width: 50px;
-    margin-right: 10px;
-    color: black;
-    @include mix.desktop {
-      margin-right: 150px;
-    }
-  }
 
   &__copywrite {
     font-size: 10px;
-    margin-left: 200px;
-    @include mix.desktop {
-      margin-left: 45%;
-    }
+    margin-right: 5px;
+    margin-top: 40px;
+  }
+  &__logo {
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -152,7 +133,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 30%;
     &:hover {
       background-color: #ffffdf;
@@ -174,7 +155,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 30%;
     &:hover {
       background-color: #ffffdf;
@@ -196,7 +177,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 30%;
     &:hover {
       background-color: #ffffdf;
