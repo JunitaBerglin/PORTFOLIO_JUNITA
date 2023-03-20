@@ -50,7 +50,7 @@ export let projects: Projects[] = [
   ),
   new Projects(
     "Rest api with MongoDb",
-    "https://github.com/JunitaBerglin/PORTFOLIO_JUNITA/blob/main/src/attributes/Sk%C3%A4rmavbild%202023-03-20%20kl.%2013.03.53.jpg?raw=true",
+    "https://github.com/JunitaBerglin/PORTFOLIO_JUNITA/blob/main/src/attributes/Sk%C3%A4rmavbild%202023-03-20%20kl.%2013.27.51.jpg?raw=true",
     "Assignment where I builted API with MongoDb. Unfortunately not able to test, but feel free to look at the code.",
     6,
     "this is not able to be tested",
