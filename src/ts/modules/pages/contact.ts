@@ -90,8 +90,7 @@ export function contact() {
     "https://formsubmit.co/68a04b80f29cd1ae7d696341179067a2";
   formReply.type = "hidden";
   formReply.name = "_next";
-  formReply.value =
-    "https://formsubmit.co/68a04b80f29cd1ae7d696341179067a2";
+  formReply.value = "https://junitaberglin.com/";
   formResponse.type = "hidden";
   formResponse.name = "_autoresponse";
   formResponse.value =
@@ -124,8 +123,7 @@ export function contact() {
   contactFormMailInput.required = true;
   contactFormMessageInput.required = true;
 
-  contactPageText.innerHTML =
-    "(THIS CONTACT FORM IS UNDER CONSTRUCTION, EMAIL ME INSTEAD AT junita.berglin@gmail.com";
+  contactPageText.innerHTML = "Get in touch!";
   contactFormFirstNameLabel.innerHTML = "First Name";
   contactFormLastNameLabel.innerHTML = "Last Name";
   contactFormMailLabel.innerHTML = "Mail";
