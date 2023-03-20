@@ -115,7 +115,7 @@ function about() {
   aboutImage.setAttribute("id", "img_me");
 
   aboutDescription.innerHTML =
-    "Hello, I’m Junita! I am a junior front end developer, currently studying at Medieinstitutet in Stockholm. As a former occupational therapist I always have a creative perspective in mind and I love what innovation can do for people. Next up for me is internship this autumn. I hope to find a place where I can contribute aswell as learn a develop my front end skills. So if you're interested in talking more - don't hesitate to contact me!";
+    "Hello, I’m Junita! I am a junior front end developer, currently studying at Medieinstitutet in Stockholm. As a former occupational therapist I always have a creative perspective in mind and I love what innovation can do for people. Next up for me is internship this autumn. I hope to find a place where I can contribute as well as learn and develop my front end skills. So if you're interested in talking more - don't hesitate to contact me!";
 
   aboutContainer.appendChild(aboutDescription);
   imgContainer.appendChild(aboutImage);
