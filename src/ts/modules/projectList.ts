@@ -48,7 +48,7 @@ export let projects: Projects[] = [
   ),
   new Projects(
     "Frontend/backend GraphQL",
-    "https://github.com/JunitaBerglin/PORTFOLIO_JUNITA/blob/main/src/attributes/Sk%C3%A4rmavbild%202023-03-20%20kl.%2012.02.54.jpg?raw=true",
+    "https://github.com/JunitaBerglin/PORTFOLIO_JUNITA/blob/main/src/attributes/Sk%C3%A4rmavbild%202023-03-20%20kl.%2013.03.53.jpg?raw=true",
     "Assignment where we had to build api with graphql and mockdata. Unfortunately not able to test, but feel free to look at the code.",
     4,
     "this is not able to be tested",
