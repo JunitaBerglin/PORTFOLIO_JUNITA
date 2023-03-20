@@ -32,12 +32,6 @@ export let projects: Projects[] = [
     "https://junitaberglin-moviesearch.netlify.app",
     "https://github.com/JunitaBerglin/practice_axios_omdb"
   ),
-  /*  new Projects(
-    "Memory",
-    "https://github.com/JunitaBerglin/icecream_memory/blob/main/src/assets/Sk%C3%A4rmavbild%202023-02-10%20kl.%2009.46.50.png?raw=true",
-    "This is a game I builted on my spare time",
-    4
-  ),*/
   new Projects(
     "Unittesting",
     "https://github.com/JunitaBerglin/PORTFOLIO_JUNITA/blob/main/src/attributes/Sk%C3%A4rmavbild%202023-03-20%20kl.%2012.02.54.jpg?raw=true",
@@ -50,8 +44,16 @@ export let projects: Projects[] = [
     "Frontend/backend GraphQL",
     "https://github.com/JunitaBerglin/PORTFOLIO_JUNITA/blob/main/src/attributes/Sk%C3%A4rmavbild%202023-03-20%20kl.%2013.03.53.jpg?raw=true",
     "Assignment where we had to build api with graphql and mockdata. Unfortunately not able to test, but feel free to look at the code.",
-    4,
+    5,
     "this is not able to be tested",
     "https://github.com/JunitaBerglin/booki-app.git"
+  ),
+  new Projects(
+    "Rest api with MongoDb",
+    "https://github.com/JunitaBerglin/PORTFOLIO_JUNITA/blob/main/src/attributes/Sk%C3%A4rmavbild%202023-03-20%20kl.%2013.03.53.jpg?raw=true",
+    "Assignment where I builted API with MongoDb. Unfortunately not able to test, but feel free to look at the code.",
+    6,
+    "this is not able to be tested",
+    "https://github.com/JunitaBerglin/rest-api-mongodb-komplettering.git"
   ),
 ];
