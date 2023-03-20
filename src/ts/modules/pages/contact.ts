@@ -124,7 +124,8 @@ export function contact() {
   contactFormMailInput.required = true;
   contactFormMessageInput.required = true;
 
-  contactPageText.innerHTML = "Get in touch!";
+  contactPageText.innerHTML =
+    "(THIS CONTACT FORM IS UNDER CONSTRUCTION, EMAIL ME INSTEAD AT junita.berglin@gmail.com";
   contactFormFirstNameLabel.innerHTML = "First Name";
   contactFormLastNameLabel.innerHTML = "Last Name";
   contactFormMailLabel.innerHTML = "Mail";
