@@ -90,7 +90,8 @@ export function contact() {
     "https://formsubmit.co/68a04b80f29cd1ae7d696341179067a2";
   formReply.type = "hidden";
   formReply.name = "_next";
-  formReply.value = "https://junitaberglin.com/";
+  formReply.value =
+    "https://formsubmit.co/68a04b80f29cd1ae7d696341179067a2";
   formResponse.type = "hidden";
   formResponse.name = "_autoresponse";
   formResponse.value =
