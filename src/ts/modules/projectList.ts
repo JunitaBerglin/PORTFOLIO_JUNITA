@@ -27,7 +27,7 @@ export let projects: Projects[] = [
   new Projects(
     "Movie search",
     "https://github.com/JunitaBerglin/practice_axios_omdb/blob/main/src/assets/movie_pic.png?raw=true",
-    "As a part of the course 'Introduction to JavaScript' we learned to get data from APIs using Fetch and Axios. This movie database made for movies, displays data from OmdbAPI.com.",
+    "WORK UNDER PROCESS - As a part of the course 'Introduction to JavaScript' we learned to get data from APIs using Fetch and Axios. This movie database made for movies, displays data from OmdbAPI.com.",
     3,
     "https://junitaberglin-moviesearch.netlify.app",
     "https://github.com/JunitaBerglin/practice_axios_omdb"
