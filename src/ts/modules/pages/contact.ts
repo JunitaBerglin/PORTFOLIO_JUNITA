@@ -131,7 +131,7 @@ export function contact() {
   contactFormMessageLabel.innerHTML = "Your Message";
   contactFormSubmitButton.innerHTML = "Submit";
   contactPageEmail.innerHTML =
-    "Otherwise, email me at junita.berglin@gmail.com!";
+    "Or, email me at junita.berglin@gmail.com!";
 
   contactForm.appendChild(contactFormNameContainer);
   contactForm.appendChild(contactFormContactContainer);
