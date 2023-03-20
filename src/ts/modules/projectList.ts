@@ -40,9 +40,9 @@ export let projects: Projects[] = [
   ),*/
   new Projects(
     "Inlämningsuppgift - Enhetstester med jest",
-    "https://github.com/JunitaBerglin/practice_axios_omdb/blob/main/src/assets/movie_pic.png?raw=true",
+    "https://github.com/JunitaBerglin/PORTFOLIO_JUNITA/blob/main/src/attributes/Sk%C3%A4rmavbild%202023-03-20%20kl.%2012.02.54.jpg?raw=true",
     "As a part of the course 'Testing' we learned to test our code with jest.",
-    3,
+    4,
     "https://junitaberglin-moviesearch.netlify.app",
     "https://github.com/JunitaBerglin/Testassignment.git"
   ),
