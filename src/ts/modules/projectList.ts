@@ -43,7 +43,7 @@ export let projects: Projects[] = [
     "https://github.com/JunitaBerglin/PORTFOLIO_JUNITA/blob/main/src/attributes/Sk%C3%A4rmavbild%202023-03-20%20kl.%2012.02.54.jpg?raw=true",
     "As a part of the course 'Testing' we learned to test our code with jest.",
     4,
-    "https://junitaberglin-moviesearch.netlify.app",
+    "this is not able to be tested",
     "https://github.com/JunitaBerglin/Testassignment.git"
   ),
 ];
