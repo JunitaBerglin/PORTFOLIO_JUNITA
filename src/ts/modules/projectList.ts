@@ -38,4 +38,12 @@ export let projects: Projects[] = [
     "This is a game I builted on my spare time",
     4
   ),*/
+  new Projects(
+    "Inlämningsuppgift - Enhetstester med jest",
+    "https://github.com/JunitaBerglin/practice_axios_omdb/blob/main/src/assets/movie_pic.png?raw=true",
+    "As a part of the course 'Testing' we learned to test our code with jest.",
+    3,
+    "https://junitaberglin-moviesearch.netlify.app",
+    "https://github.com/JunitaBerglin/Testassignment.git"
+  ),
 ];
