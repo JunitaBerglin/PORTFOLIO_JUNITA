@@ -1,0 +1,4 @@
+[build]
+base = "src"
+publish = "dist"
+command = "parcel build --dist-dir dist src/index.html"
