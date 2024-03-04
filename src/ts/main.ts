@@ -2,12 +2,9 @@ import { projects } from "./modules/projectList";
 import { Projects } from "./modules/Projects";
 import { contact } from "./modules/pages/contact";
 
-let mainWrapper = document.getElementById(
-  "mainWrapper"
-) as HTMLDivElement;
+let mainWrapper = document.getElementById("mainWrapper") as HTMLDivElement;
 
-const projectOnDisplay: HTMLElement =
-  document.createElement("section");
+const projectOnDisplay: HTMLElement = document.createElement("section");
 
 projectOnDisplay.classList.add("projectOnDisplay");
 
@@ -24,12 +21,9 @@ export function work(projectItems: Projects[]) {
 
   for (let i = 0; i < projectItems.length; i++) {
     let container: HTMLDivElement = document.createElement("div");
-    let projectImage: HTMLImageElement =
-      document.createElement("img");
-    let projectName: HTMLHeadingElement =
-      document.createElement("h3");
-    let projectDescription: HTMLParagraphElement =
-      document.createElement("p");
+    let projectImage: HTMLImageElement = document.createElement("img");
+    let projectName: HTMLHeadingElement = document.createElement("h3");
+    let projectDescription: HTMLParagraphElement = document.createElement("p");
     let websiteLink: HTMLAnchorElement = document.createElement("a");
     let githubLink: HTMLAnchorElement = document.createElement("a");
 
@@ -59,9 +53,7 @@ export function work(projectItems: Projects[]) {
     projectContainer.appendChild(container);
   }
 }
-let projectClick = document.getElementById(
-  "projectClick"
-) as HTMLDivElement;
+let projectClick = document.getElementById("projectClick") as HTMLDivElement;
 
 projectClick.addEventListener("click", () => {
   if (!projectsOpen) {
@@ -72,14 +64,12 @@ projectClick.addEventListener("click", () => {
     ) as HTMLDivElement;
     projectContainer.innerHTML = "";
     projectsOpen = false;
-    document
-      .getElementById("portfolioIcon")
-      ?.classList.remove("open");
+    document.getElementById("portfolioIcon")?.classList.remove("open");
   }
 });
 
 /**
- **************************** ABOUT***********************************
+ **************************** ABOUT*********************************
  */
 
 const aboutOnDisplay: HTMLElement = document.createElement("section");
@@ -100,8 +90,7 @@ function about() {
   document.getElementById("aboutIcon")?.classList.add("open");
   aboutOnDisplay.innerHTML = "";
 
-  let aboutDescription: HTMLParagraphElement =
-    document.createElement("p");
+  let aboutDescription: HTMLParagraphElement = document.createElement("p");
   let aboutImage: HTMLImageElement = document.createElement("img");
 
   aboutImage.classList.add("about__img");
@@ -110,7 +99,7 @@ function about() {
   imgContainer.classList.add("imgWrapper");
 
   aboutImage.src =
-    "https://github.com/JunitaBerglin/PORTFOLIO_JUNITA/blob/main/src/attributes/IMG_8339%20(1).jpg?raw=true";
+    "https://github.com/JunitaBerglin/PORTFOLIO_JUNITA/blob/main/src/attributes/IMG_5730_VSCO%20(1).jpg";
   aboutImage.alt = "pucture of me!";
   aboutImage.setAttribute("id", "img_me");
 
@@ -122,9 +111,7 @@ function about() {
   aboutDescription.appendChild(imgContainer);
 }
 
-let aboutClick = document.getElementById(
-  "aboutClick"
-) as HTMLDivElement;
+let aboutClick = document.getElementById("aboutClick") as HTMLDivElement;
 
 aboutClick.addEventListener("click", () => {
   if (!aboutOpen) {
@@ -141,9 +128,7 @@ aboutClick.addEventListener("click", () => {
 
 /*************************CONTACT ************************* */
 
-let contactClick = document.getElementById(
-  "contactClick"
-) as HTMLDivElement;
+let contactClick = document.getElementById("contactClick") as HTMLDivElement;
 
 contactClick.addEventListener("click", () => {
   contact();
