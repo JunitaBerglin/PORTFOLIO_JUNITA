@@ -98,8 +98,7 @@ function about() {
   aboutContainer.classList.add("aboutWrapper");
   imgContainer.classList.add("imgWrapper");
 
-  aboutImage.src =
-    "https://github.com/JunitaBerglin/PORTFOLIO_JUNITA/blob/main/src/attributes/IMG_5730_VSCO%20(1).jpg";
+  aboutImage.src = "src/attributes/IMG_5730_VSCO (1).jpg";
   aboutImage.alt = "pucture of me!";
   aboutImage.setAttribute("id", "img_me");
 
