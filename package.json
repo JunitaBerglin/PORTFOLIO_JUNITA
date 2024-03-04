@@ -17,7 +17,8 @@
   },
   "scripts": {
     "test": "npx jest --watchAll",
-    "start": "npx parcel src/index.html --no-cache"
+    "start": "npx parcel src/index.html --no-cache",
+    "build": "npx parcel build src/index.html"
   },
   "jest": {
     "preset": "ts-jest",
