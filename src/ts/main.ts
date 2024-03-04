@@ -98,12 +98,13 @@ function about() {
   aboutContainer.classList.add("aboutWrapper");
   imgContainer.classList.add("imgWrapper");
 
-  aboutImage.src = "src/attributes/IMG_5730_VSCO (1).jpg";
+  aboutImage.src =
+    "https://github.com/JunitaBerglin/PORTFOLIO_JUNITA/blob/5dee6bdfe4d308dcb31b05370f3fd3717019671a/src/attributes/IMG_5730_VSCO%20(1).jpg";
   aboutImage.alt = "pucture of me!";
   aboutImage.setAttribute("id", "img_me");
 
   aboutDescription.innerHTML =
-    "Hello, I’m Junita! I am a junior front end developer, currently studying at Medieinstitutet in Stockholm. As a former occupational therapist I always have a creative perspective in mind and I love what innovation can do for people. Next up for me is internship this autumn. I hope to find a place where I can contribute as well as learn and develop my front end skills. So if you're interested in talking more - don't hesitate to contact me!";
+    "Hi, I'm Junita! I'm about to complete my front-end developer studies at Medieinstitutet in Stockholm, and I'm thrilled to be starting my search for my first job in this field. With a rich background in mental health care as an occupational therapist for eight years, I bring a wealth of life experience and a knack for creative solutions. At 33, I've honed my social skills and am eager to apply my innovative outlook to the tech world. I'm looking forward to contributing to a team where I can further develop my front-end skills. If you're interested in a chat, please don't hesitate to reach out!";
 
   aboutContainer.appendChild(aboutDescription);
   imgContainer.appendChild(aboutImage);
