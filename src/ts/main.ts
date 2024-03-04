@@ -92,16 +92,15 @@ function about() {
 
   let aboutDescription: HTMLParagraphElement = document.createElement("p");
   let aboutImage: HTMLImageElement = document.createElement("img");
-
   aboutImage.classList.add("about__img");
   aboutDescription.classList.add("about__description");
   aboutContainer.classList.add("aboutWrapper");
   imgContainer.classList.add("imgWrapper");
 
+  aboutImage.classList.add("about__img");
   aboutImage.src =
-    "https://github.com/JunitaBerglin/PORTFOLIO_JUNITA/blob/5dee6bdfe4d308dcb31b05370f3fd3717019671a/src/attributes/IMG_5730_VSCO%20(1).jpg";
-  aboutImage.alt = "pucture of me!";
-  aboutImage.setAttribute("id", "img_me");
+    "https://github.com/JunitaBerglin/PORTFOLIO_JUNITA/main/5dee6bdfe4d308dcb31b05370f3fd3717019671a/src/attributes/IMG_5730_VSCO%20(1).jpg";
+  aboutImage.alt = "picture of me!";
 
   aboutDescription.innerHTML =
     "Hi, I'm Junita! I'm about to complete my front-end developer studies at Medieinstitutet in Stockholm, and I'm thrilled to be starting my search for my first job in this field. With a rich background in mental health care as an occupational therapist for eight years, I bring a wealth of life experience and a knack for creative solutions. At 33, I've honed my social skills and am eager to apply my innovative outlook to the tech world. I'm looking forward to contributing to a team where I can further develop my front-end skills. If you're interested in a chat, please don't hesitate to reach out!";
