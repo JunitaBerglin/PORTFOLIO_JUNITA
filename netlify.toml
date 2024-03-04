@@ -1,4 +1,4 @@
 [build]
 base = "src"
 publish = "dist"
-command = "parcel build --dist-dir dist src/index.html"
+command = "parcel build src/index.html --dist-dir dist"
